@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniel Fuqua\\workspace\\csharp-exercises\\Heist-PartII\\Heist-PartTwo\\Heist-PartTwo.csproj": {}
+    "C:\\Users\\Daniel\\workspace\\csharp\\HeistII\\Heist-PartII-Team6\\Heist-PartTwo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel Fuqua\\workspace\\csharp-exercises\\Heist-PartII\\Heist-PartTwo\\Heist-PartTwo.csproj": {
+    "C:\\Users\\Daniel\\workspace\\csharp\\HeistII\\Heist-PartII-Team6\\Heist-PartTwo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel Fuqua\\workspace\\csharp-exercises\\Heist-PartII\\Heist-PartTwo\\Heist-PartTwo.csproj",
+        "projectUniqueName": "C:\\Users\\Daniel\\workspace\\csharp\\HeistII\\Heist-PartII-Team6\\Heist-PartTwo.csproj",
         "projectName": "Heist-PartTwo",
-        "projectPath": "C:\\Users\\Daniel Fuqua\\workspace\\csharp-exercises\\Heist-PartII\\Heist-PartTwo\\Heist-PartTwo.csproj",
-        "packagesPath": "C:\\Users\\Daniel Fuqua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel Fuqua\\workspace\\csharp-exercises\\Heist-PartII\\Heist-PartTwo\\obj\\",
+        "projectPath": "C:\\Users\\Daniel\\workspace\\csharp\\HeistII\\Heist-PartII-Team6\\Heist-PartTwo.csproj",
+        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daniel\\workspace\\csharp\\HeistII\\Heist-PartII-Team6\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Daniel Fuqua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
