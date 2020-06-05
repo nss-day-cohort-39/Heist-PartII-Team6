@@ -16,7 +16,7 @@ namespace Heist_PartTwo
         {
             get
             {
-                if ((CashOnHand + AlarmScore + VaultScore + SecurityGuardScore) <= 0)
+                if ((AlarmScore + VaultScore + SecurityGuardScore) <= 0)
                 {
                     return false;
                 }

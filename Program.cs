@@ -51,18 +51,71 @@ namespace Heist_PartTwo
                 RealDaniel
             };
 
-            Console.WriteLine("Enter the name of new crew member.");
-            Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("Enter the name of new crew member.");
+                string newName = Console.ReadLine();
+                if (newName == "")
+                {
+                    break;
+                }
 
-            Console.WriteLine("Choose a specialty");
-            Console.WriteLine("Hacker | Muscle | LockpickSpecialist");
-            Console.ReadLine();
+                Console.WriteLine("Choose a specialty");
+                Console.WriteLine("Hacker | Muscle | LockpickSpecialist");
+                string newSpecialty = Console.ReadLine();
 
-            Console.WriteLine("Choose skill level between 1 and 100");
-            Console.ReadLine();
+                Console.WriteLine("Choose skill level between 1 and 100");
+                int newSkillLevel = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("Choose the cut percentage");
-            Console.ReadLine();
+                Console.WriteLine("Choose the cut percentage");
+                int newPercentageCut = Int32.Parse(Console.ReadLine());
+
+                if (newSpecialty == "Hacker")
+                {
+                    Hacker newRobber = new Hacker
+                    {
+                    Name = newName,
+                    SkillLevel = newSkillLevel,
+                    PercentageCut = newPercentageCut
+                    };
+                    Rolodex.Add(newRobber);
+                }
+                else if (newSpecialty == "LockpickSpecialist")
+                {
+                    LockSpecialist newRobber = new LockSpecialist
+                    {
+                    Name = newName,
+                    SkillLevel = newSkillLevel,
+                    PercentageCut = newPercentageCut
+                    };
+                    Rolodex.Add(newRobber);
+                }
+                else if (newSpecialty == "Muscle")
+                {
+                    Muscle newRobber = new Muscle
+                    {
+                    Name = newName,
+                    SkillLevel = newSkillLevel,
+                    PercentageCut = newPercentageCut
+                    };
+                    Rolodex.Add(newRobber);
+                };
+            };
+            Random rand = new Random();
+
+            Bank GothamTrust = new Bank
+            {
+                AlarmScore = rand.Next(101),
+                VaultScore = rand.Next(101),
+                SecurityGuardScore = rand.Next(101),
+                CashOnHand = rand.Next(50_000, 1_000_001)
+            };
+            Dictionary<string, int> SecurityScores = new Dictionary<string, int>()
+            { { "AlarmScore", GothamTrust.AlarmScore }, { "VaultScore", GothamTrust.VaultScore }, { "SecurityGuardScore", GothamTrust.SecurityGuardScore }
+            };
+
+            Console.WriteLine($"Most Secure: ");
+            Console.WriteLine($"Least Secure: ");
         }
     }
 }
